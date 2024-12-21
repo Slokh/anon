@@ -14,7 +14,7 @@ export const actionsTable = pgTable('actions', {
   credential_id: varchar({ length: 255 }),
   credential_requirement: jsonb('credential_requirement'),
   metadata: jsonb('metadata'),
-  trigger: varchar({ length: 255 }).notNull(),
+  trigger: varchar({ length: 255 }),
   created_at: timestamp().notNull().defaultNow(),
   updated_at: timestamp().notNull().defaultNow(),
 })
